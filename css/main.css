@@ -189,7 +189,36 @@
 }
 
 .contacts-section__title {
+  margin: 0;
   font-size: 24px;
+}
+
+.contacts-section__subtitle {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contacts-personal {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+}
+@media (max-width: 991px) {
+  .contacts-personal {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+
+.contacts-gallery {
+  margin-top: 30px;
+  height: auto !important;
+}
+
+.contacts-gallery__slide img {
+  width: 100%;
 }
 
 .requisits {
@@ -340,6 +369,92 @@
     max-width: 290px;
     justify-content: space-between;
     gap: unset;
+  }
+}
+
+.personal-card {
+  position: relative;
+  max-width: 333px;
+  min-width: 260px;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  padding-bottom: 105px;
+}
+
+.personal-card__image img {
+  width: 100%;
+}
+
+.personal-card__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 105px;
+  overflow: hidden;
+  border-radius: 0 0 3px 3px;
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  border-left: 1px solid #ECECEC;
+  transition: max-height 0.25s;
+}
+.personal-card:hover .personal-card__bottom {
+  max-height: 100%;
+}
+
+.personal-card__content {
+  background: white;
+  padding: 28px 30px;
+}
+
+.personal-card__title {
+  display: block;
+  color: #999;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.personal-card__name {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.personal-card__contacts {
+  position: relative;
+  margin-top: 20px;
+  display: grid;
+  row-gap: 10px;
+}
+
+.personal-card__contacts-title {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.personal-card__contacts-value {
+  display: block;
+  font-size: 16px;
+}
+
+.personal-card__socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 991px) {
+  .personal-card__socials {
+    position: static;
   }
 }
 
