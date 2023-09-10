@@ -54,6 +54,7 @@
 }
 .requisits__item-row {
     display: flex;
+    flex-grow: 1;
     align-items: start;
     padding-right: 25px;
     @media (max-width: 767px) {
@@ -65,7 +66,7 @@
     width: 185px;
     flex-shrink: 0;
     @media (max-width: 991px) {
-        width: 300px;
+        // width: 300px;
 
     }
     @media (max-width: 767px) {

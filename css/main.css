@@ -252,15 +252,6 @@
   }
 }
 
-.contacts-gallery {
-  margin-top: 30px;
-  height: auto !important;
-}
-
-.contacts-gallery__slide img {
-  width: 100%;
-}
-
 .requisits {
   display: flex;
   flex-direction: column;
@@ -332,6 +323,7 @@
 
 .requisits__item-row {
   display: flex;
+  flex-grow: 1;
   align-items: start;
   padding-right: 25px;
 }
@@ -345,11 +337,6 @@
 .requisits__item-name {
   width: 185px;
   flex-shrink: 0;
-}
-@media (max-width: 991px) {
-  .requisits__item-name {
-    width: 300px;
-  }
 }
 @media (max-width: 767px) {
   .requisits__item-name {
@@ -410,6 +397,91 @@
     justify-content: space-between;
     gap: unset;
   }
+}
+
+.contacts-gallery {
+  margin-top: 30px;
+  height: auto !important;
+}
+
+.contacts-gallery__slide img {
+  width: 100%;
+}
+
+.contacts-gallery.flexslider .flex-direction-nav {
+  display: block !important;
+}
+.contacts-gallery.flexslider .flex-nav-prev,
+.contacts-gallery.flexslider .flex-nav-next {
+  position: static;
+}
+.contacts-gallery.flexslider .flex-prev,
+.contacts-gallery.flexslider .flex-next {
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  background-image: url("./../img/next.svg");
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.contacts-gallery.flexslider .flex-prev::before,
+.contacts-gallery.flexslider .flex-next::before {
+  content: none;
+}
+.contacts-gallery.flexslider .flex-prev {
+  display: none;
+  left: 30px;
+}
+.contacts-gallery.flexslider .flex-next {
+  right: 30px;
+}
+@media (max-width: 991px) {
+  .contacts-gallery.flexslider .flex-viewport {
+    margin: 0 -30px;
+    padding: 0 30px;
+  }
+  .contacts-gallery.flexslider .flex-prev {
+    left: 0;
+  }
+  .contacts-gallery.flexslider .flex-next {
+    right: 0;
+  }
+}
+
+.contacts-video {
+  margin-top: 33px;
+}
+
+.contacts-video__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4px;
+}
+@media (max-width: 991px) {
+  .contacts-video__grid {
+    grid-template-columns: unset;
+    gap: 30px;
+  }
+}
+
+.contacts-video__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-video__title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+.contacts-video__video-frame {
+  width: 100%;
+  aspect-ratio: 673/373;
+  margin-top: 30px;
 }
 
 .personal-card {
