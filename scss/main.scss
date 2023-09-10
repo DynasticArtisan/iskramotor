@@ -1,8 +1,9 @@
 @import 'contacts';
-@import 'requisits';
+@import 'contacts-personal';
+@import 'contacts-routes';
+@import 'contacts-video';
 @import 'contacts-gallery';
-@import 'video';
-@import 'personal-card';
+@import 'contacts-requisits';
 
 .wrapper {
     width: 100%;
@@ -10,13 +11,3 @@
     padding: 0px 30px;
     margin: 0 auto;
 }
-
-// .contacts-section__title {
-//     color: #333;
-//     font-family: Open Sans;
-//     font-size: 24px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 24px;
-//     /* 100% */
-// }
