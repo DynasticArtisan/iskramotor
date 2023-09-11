@@ -46,6 +46,10 @@
         grid-template-columns: unset;
     }
 }
+.conttacts-routes__contents {
+    margin-top: 30px;
+}
+
 .contacts-routes__content {
     ul li {
         list-style-type: unset;
@@ -53,6 +57,9 @@
             content: none;
         }
     }
+}
+.contacts-routes__tabs-content:not(._active) {
+    display: none;
 }
 .contacts-routes__map {
     max-width: 100%;

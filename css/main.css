@@ -371,11 +371,19 @@
   }
 }
 
+.conttacts-routes__contents {
+  margin-top: 30px;
+}
+
 .contacts-routes__content ul li {
   list-style-type: unset;
 }
 .contacts-routes__content ul li:before {
   content: none;
+}
+
+.contacts-routes__tabs-content:not(._active) {
+  display: none;
 }
 
 .contacts-routes__map {

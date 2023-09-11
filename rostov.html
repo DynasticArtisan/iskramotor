@@ -4850,7 +4850,7 @@
 					</div>
 					<div class="contacts-routes__grid">
 						<div class="contacts-routes__content">
-							<div class="contacts-routes__tabs-content">
+							<div class="contacts-routes__tabs-content _active">
 								<div class="contacts-routes__apps">
 									<div class="contacts-routes__app-links">
 										<a href="#" class="contacts-routes__app-link">
@@ -4963,6 +4963,13 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				$('.contacts-routes__tabs a').on('click', (e) => {
+					e.preventDefault();
+					$(e.target).addClass('_active').siblings().removeClass('_active');
+					$(e.target.getAttribute('href')).addClass('_active').siblings().removeClass('_active');
+				});
+			</script>
 		</section>
 		<section id="videos" class="contacts-section">
 			<div class="wrapper">

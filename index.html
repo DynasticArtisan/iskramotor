@@ -4988,114 +4988,296 @@
 						</div>
 					</div>
 					<div class="contacts-routes__tabs">
-						<a href="#" class="contacts__anchor-link _active">На автомобиле</a>
-						<a href="#" class="contacts__anchor-link">Общественным транспортом</a>
+						<a href="#car-route" class="contacts__anchor-link _active">На автомобиле</a>
+						<a href="#public-route" class="contacts__anchor-link">Общественным транспортом</a>
 					</div>
-					<div class="contacts-routes__grid">
-						<div class="contacts-routes__content">
-							<div class="contacts-routes__tabs-content">
-								<ul>
-									<li>В Навигаторе / картах наберите «Искра АЕ»</li>
-									<li>Перед тем, как заехать на территорию, закажите пропуск для Вашего транспортного средства у <a href="#">наших менеджеров</a></li>
-									<li>Наш склад находится с задней стороны здания, ворота 12</li>
-								</ul>
-								<img class="contacts-routes__map" src="https://iskramotor.market/bitrix/templates/aspro_max/images/schema_office.jpg" alt="">
+					<div class="conttacts-routes__contents">
+						<div id="car-route" class="contacts-routes__tabs-content _active">
+							<div class="contacts-routes__grid">
+								<div class="contacts-routes__content">
+									<ul>
+										<li>В Навигаторе / картах наберите «Искра АЕ»</li>
+										<li>Перед тем, как заехать на территорию, закажите пропуск для Вашего транспортного средства у <a href="#">наших менеджеров</a></li>
+										<li>Наш склад находится с задней стороны здания, ворота 12</li>
+									</ul>
+									<img class="contacts-routes__map" src="https://iskramotor.market/bitrix/templates/aspro_max/images/schema_office.jpg" alt="">
+								</div>
+								<div class="contacts-routes__map">
+									<script>
+										function BX_SetPlacemarks_yam_moscow(map)
+										{
+											if(typeof window["BX_YMapAddPlacemark"] != 'function')
+											{
+												/* If component's result was cached as html,
+												* script.js will not been loaded next time.
+												* let's do it manualy.
+												*/
+												(function(d, s, id)
+												{
+													var js, bx_ym = d.getElementsByTagName(s)[0];
+													if (d.getElementById(id)) return;
+													js = d.createElement(s); js.id = id;
+													js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
+													bx_ym.parentNode.insertBefore(js, bx_ym);
+												}(document, 'script', 'bx-ya-map-js'));
+												var ymWaitIntervalId = setInterval( function(){
+														if(typeof window["BX_YMapAddPlacemark"] == 'function')
+														{
+															BX_SetPlacemarks_yam_moscow(map);
+															clearInterval(ymWaitIntervalId);
+														}
+													}, 300
+												);
+												return;
+											}
+											var arObjects = {PLACEMARKS:[],POLYLINES:[]};
+											arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'37.570835049033','LAT':'55.920232583816','TEXT':'Искра АЕ'});
+										}
+										</script>
+										<div class="bx-yandex-view-layout">
+											<div class="bx-yandex-view-map">
+												<script>
+													var script = document.createElement('script');
+													script.src = 'https://enterprise.api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix&apikey=9290970a-7c87-4702-8459-5201d4fe0935';
+													(document.head || document.documentElement).appendChild(script);
+													script.onload = function () {
+														this.parentNode.removeChild(script);
+													};
+												</script>
+												<script>
+										if (!window.GLOBAL_arMapObjects)
+											window.GLOBAL_arMapObjects = {};
+										function init_yam_moscow()
+										{
+											if (!window.ymaps)
+												return;
+											var node = BX("BX_YMAP_yam_moscow");
+											node.innerHTML = '';
+											var map = window.GLOBAL_arMapObjects['yam_moscow'] = new ymaps.Map(node, {
+												center: [55.920232583816, 37.570835049033],
+												zoom: 18,
+												type: 'yandex#map'
+											});
+											map.behaviors.enable("scrollZoom");
+											map.behaviors.enable("dblClickZoom");
+											map.behaviors.enable("drag");
+											if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
+												map.behaviors.disable("rightMouseButtonMagnifier");
+											map.controls.add('zoomControl');
+											map.controls.add('smallZoomControl');
+											map.controls.add('miniMap');
+											map.controls.add('typeSelector');
+											map.controls.add('scaleLine');
+											if (window.BX_SetPlacemarks_yam_moscow)
+											{
+												window.BX_SetPlacemarks_yam_moscow(map);
+											}
+										}
+										(function bx_ymaps_waiter(){
+											if(typeof ymaps !== 'undefined')
+												ymaps.ready(init_yam_moscow);
+											else
+												setTimeout(bx_ymaps_waiter, 100);
+										})();
+										
+										/* if map inits in hidden block (display:none)
+										*  after the block showed
+										*  for properly showing map this function must be called
+										*/
+										function BXMapYandexAfterShow(mapId)
+										{
+											if(window.GLOBAL_arMapObjects[mapId] !== undefined)
+												window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+										}
+										</script>
+										<div id="BX_YMAP_yam_moscow" class="bx-yandex-map" style="height: 500px; width: 700px;max-width: 100%;">загрузка карты...</div>	</div>
+										</div>
+								</div>
 							</div>
 						</div>
-						<div class="contacts-routes__map">
-							<script>
-								function BX_SetPlacemarks_yam_moscow(map)
-								{
-									if(typeof window["BX_YMapAddPlacemark"] != 'function')
-									{
-										/* If component's result was cached as html,
-										 * script.js will not been loaded next time.
-										 * let's do it manualy.
-										*/
-										(function(d, s, id)
-										{
-											var js, bx_ym = d.getElementsByTagName(s)[0];
-											if (d.getElementById(id)) return;
-											js = d.createElement(s); js.id = id;
-											js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
-											bx_ym.parentNode.insertBefore(js, bx_ym);
-										}(document, 'script', 'bx-ya-map-js'));
-										var ymWaitIntervalId = setInterval( function(){
-												if(typeof window["BX_YMapAddPlacemark"] == 'function')
-												{
-													BX_SetPlacemarks_yam_moscow(map);
-													clearInterval(ymWaitIntervalId);
-												}
-											}, 300
-										);
-										return;
-									}
-									var arObjects = {PLACEMARKS:[],POLYLINES:[]};
-									arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'37.570835049033','LAT':'55.920232583816','TEXT':'Искра АЕ'});
-								}
-								</script>
-								<div class="bx-yandex-view-layout">
-									<div class="bx-yandex-view-map">
-										<script>
-											var script = document.createElement('script');
-											script.src = 'https://enterprise.api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix&apikey=9290970a-7c87-4702-8459-5201d4fe0935';
-											(document.head || document.documentElement).appendChild(script);
-											script.onload = function () {
-												this.parentNode.removeChild(script);
-											};
-										</script>
-										<script>
-								if (!window.GLOBAL_arMapObjects)
-									window.GLOBAL_arMapObjects = {};
-								function init_yam_moscow()
-								{
-									if (!window.ymaps)
-										return;
-									var node = BX("BX_YMAP_yam_moscow");
-									node.innerHTML = '';
-									var map = window.GLOBAL_arMapObjects['yam_moscow'] = new ymaps.Map(node, {
-										center: [55.920232583816, 37.570835049033],
-										zoom: 18,
-										type: 'yandex#map'
-									});
-									map.behaviors.enable("scrollZoom");
-									map.behaviors.enable("dblClickZoom");
-									map.behaviors.enable("drag");
-									if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
-										map.behaviors.disable("rightMouseButtonMagnifier");
-									map.controls.add('zoomControl');
-									map.controls.add('smallZoomControl');
-									map.controls.add('miniMap');
-									map.controls.add('typeSelector');
-									map.controls.add('scaleLine');
-									if (window.BX_SetPlacemarks_yam_moscow)
-									{
-										window.BX_SetPlacemarks_yam_moscow(map);
-									}
-								}
-								(function bx_ymaps_waiter(){
-									if(typeof ymaps !== 'undefined')
-										ymaps.ready(init_yam_moscow);
-									else
-										setTimeout(bx_ymaps_waiter, 100);
-								})();
-								
-								/* if map inits in hidden block (display:none)
-								*  after the block showed
-								*  for properly showing map this function must be called
-								*/
-								function BXMapYandexAfterShow(mapId)
-								{
-									if(window.GLOBAL_arMapObjects[mapId] !== undefined)
-										window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
-								}
-								</script>
-								<div id="BX_YMAP_yam_moscow" class="bx-yandex-map" style="height: 500px; width: 700px;max-width: 100%;">загрузка карты...</div>	</div>
+						<div id="public-route" class="contacts-routes__tabs-content tab-pane bus bus_moscov" id="bus_moscov">
+							<h6>1. На автобусе нужно доехать до Ашана:</h6>
+							<div class="items row accordion-type-1 ">
+								<div class="col-md-12">
+									<div class="item_wrap box-shadow rounded3 bordered-block  item-accordion-wrapper">
+										<div class="item accordion-head colored_theme_hover_bg-block noborder wti clearfix accordion-close collapsed" id="bx_3218110189_3185" data-toggle="collapse" data-parent="#accordion322" href="#accordion3185_322">
+											<span class="arrow_open pull-right colored_theme_hover_bg-el"></span>
+											<div class="body-info with-section ">
+												<div class="top-block flexbox flexbox--row  justify-content-between ">
+													<div class="top-block__info">
+														<div class="title font_mlg ">
+															Станция метро «Алтуфьево»
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="accordion3185_322" class="panel-collapse collapse" style="height: 0px;">
+											<div class="accordion-body">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="text">
+															Станция метро «Алтуфьево»: первый вагон из центра, из стеклянных дверей направо, по лестнице налево. До ТРЦ «Весна!» следуют оранжевые автобусы № 1018 с надписью: «ТРЦ «Весна!», автобусы 1005, 1006, 1007, 1014
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
+							</div>
+							<div class="items row accordion-type-1 ">
+								<div class="col-md-12">
+									<div class="item_wrap box-shadow rounded3 bordered-block  item-accordion-wrapper">
+										<div class="item accordion-head colored_theme_hover_bg-block noborder wti clearfix accordion-close collapsed" id="bx_3218110189_3185" data-toggle="collapse" data-parent="#accordion323" href="#accordion3185_323">
+											<span class="arrow_open pull-right colored_theme_hover_bg-el"></span>
+											<div class="body-info with-section ">
+												<div class="top-block flexbox flexbox--row  justify-content-between ">
+													<div class="top-block__info">
+														<div class="title font_mlg ">
+															Станция метро «Отрадное»:
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="accordion3185_323" class="panel-collapse collapse" style="height: 0px;">
+											<div class="accordion-body">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="text">
+															Станция метро «Отрадное»: последний вагон из центра, из стеклянных дверей направо, по лестнице налево. Автобус № 1005 «Ашан – Отрадное».
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items row accordion-type-1 ">
+								<div class="col-md-12">
+									<div class="item_wrap box-shadow rounded3 bordered-block  item-accordion-wrapper">
+										<div class="item accordion-head colored_theme_hover_bg-block noborder wti clearfix accordion-close collapsed" id="bx_3218110189_3185" data-toggle="collapse" data-parent="#accordion324" href="#accordion3185_324">
+											<span class="arrow_open pull-right colored_theme_hover_bg-el"></span>
+											<div class="body-info with-section ">
+												<div class="top-block flexbox flexbox--row  justify-content-between ">
+													<div class="top-block__info">
+														<div class="title font_mlg ">
+															Платформа Лианозово:
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="accordion3185_324" class="panel-collapse collapse" style="height: 0px;">
+											<div class="accordion-body">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="text">
+															Платформа Лианозово: выйти на остановку общественного транспорта «Платформа Лианозово». Автобус № 1007 «Лианозово – Ашан».
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items row accordion-type-1 ">
+								<div class="col-md-12">
+									<div class="item_wrap box-shadow rounded3 bordered-block  item-accordion-wrapper">
+										<div class="item accordion-head colored_theme_hover_bg-block noborder wti clearfix accordion-close collapsed" id="bx_3218110189_3185" data-toggle="collapse" data-parent="#accordion325" href="#accordion3185_325">
+											<span class="arrow_open pull-right colored_theme_hover_bg-el"></span>
+											<div class="body-info with-section ">
+												<div class="top-block flexbox flexbox--row  justify-content-between ">
+													<div class="top-block__info">
+														<div class="title font_mlg ">
+															Платформа Дегунино:
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="accordion3185_325" class="panel-collapse collapse" style="height: 0px;">
+											<div class="accordion-body">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="text">
+															Платформа Дегунино: выйти на остановку общественного транспорта «Платформа Дегунино». Автобус № 1006 «Дегунино – Ашан».
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items row accordion-type-1 ">
+								<div class="col-md-12">
+									<div class="item_wrap box-shadow rounded3 bordered-block  item-accordion-wrapper">
+										<div class="item accordion-head colored_theme_hover_bg-block noborder wti clearfix accordion-close collapsed" id="bx_3218110189_3185" data-toggle="collapse" data-parent="#accordion326" href="#accordion3185_326">
+											<span class="arrow_open pull-right colored_theme_hover_bg-el"></span>
+											<div class="body-info with-section ">
+												<div class="top-block flexbox flexbox--row  justify-content-between ">
+													<div class="top-block__info">
+														<div class="title font_mlg ">
+															Платформа Ховрино:
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="accordion3185_326" class="panel-collapse collapse" style="height: 0px;">
+											<div class="accordion-body">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="text">
+															Платформа Ховрино: выйти на остановку общественного транспорта «Станция Ховрино». Автобус № 1014 «Ховрино – Ашан».
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class = 'row'>
+								<div class = 'col-md-4'>
+									<ul class = 'iskra_point'>
+										<h6> 2. Далее 900м пешком в северном направлении до комплекса «Вешки Парк»:</h6>
+										<li>пересеките стоянку «Ашан-Леруа Мерлен»</li>
+										<li>обойдите здание «Леруа Мерлен»</li>
+										<li>идите вдоль строения «ПЭК», далее направо.</li>
+										<li>найдите бизнес центр «Вешки парк» с оранжевыми буквами на здании</li>
+										<li>сообщите на КПП, что Вы хотите пройти в компанию «Искра АЕ»</li>
+										<li>для того, чтобы подняться в ОФИС, нужно пройти на главный вход, через ресепшн пройти к лифтам, подняться на 5-й этаж и найти офис 504. Для того, чтобы пройти на СКЛАД, нужно обогнуть здание с любой стороны (быстрее по часовой стрелке) и найти дверь с табличкой «Искра АЕ»</li>
+									</ul>
+								</div>
+								<div class = 'col-md-4'>
+									<br>
+									<a href = '/bitrix/templates/aspro_max/images/how_to_go2_big.jpg'  data-lightbox="example-1" >
+										<img src="https://iskramotor.market/bitrix/templates/aspro_max/images/how_to_go2.jpg" alt = ''/>
+									</a>
+								</div>
+								<div class = 'col-md-4'>
+									<br>
+									<a href = '/bitrix/templates/aspro_max/images/how_to_go_big.jpg'  data-lightbox="example-1" >
+										<img src="https://iskramotor.market/bitrix/templates/aspro_max/images/how_to_go.jpg" alt = ''/>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<script>
+				$('.contacts-routes__tabs a').on('click', (e) => {
+					e.preventDefault();
+					$(e.target).addClass('_active').siblings().removeClass('_active');
+					$(e.target.getAttribute('href')).addClass('_active').siblings().removeClass('_active');
+				});
+			</script>
 		</section>
 		<section id="videos" class="contacts-section">
 			<div class="wrapper">
@@ -5150,7 +5332,7 @@
 					</ul>
 				</div>
 				<script>
-					$(window).load(() => $('.contacts-gallery').flexslider({
+					$('.contacts-gallery').flexslider({
 						animation: "slide",
 						animationLoop: false,
 						slideshow:true,
@@ -5160,7 +5342,7 @@
 						itemMargin: 4,
 						minItems: 1, 
 						maxItems: 2
-					}));
+					});	
 				</script>
 			</div>
 		</section>	

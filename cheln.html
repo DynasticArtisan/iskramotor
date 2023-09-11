@@ -4844,12 +4844,12 @@
 				<div class="contacts-section__title">Как проехать в офис Искра Восток</div>
 				<div class="contacts-routes">
 					<div class="contacts-routes__tabs">
-						<a href="#" class="contacts__anchor-link _active">На автомобиле</a>
-						<a href="#" class="contacts__anchor-link">Общественным транспортом</a>
+						<a href="#car-route" class="contacts__anchor-link _active">На автомобиле</a>
+						<a href="#public-route" class="contacts__anchor-link">Общественным транспортом</a>
 					</div>
 					<div class="contacts-routes__grid">
 						<div class="contacts-routes__content">
-							<div class="contacts-routes__tabs-content">
+							<div id="car-route" class="contacts-routes__tabs-content _active">
 								<div class="contacts-routes__apps">
 									<div class="contacts-routes__app-links">
 										<a href="#" class="contacts-routes__app-link">
@@ -4865,6 +4865,16 @@
 								<ul>
 									<li>Воспользуйтесь ссылками либо в Яндекс Навигаторе / Google Картах наберите «Искра Восток Набережные Челны»</li>
 									<li>Для того, чтобы попасть в офис Искра Восток, найдите подъезд № 2 (с табличкой компании) и заходите на первый этаж.</li>
+								</ul>
+							</div>
+							<div id="public-route" class="contacts-routes__tabs-content">
+								<ul>
+									<li>На трамвае (№№ 2, 6, 8, 12 или 12а) нужно доехать до остановки «поселок Орловка»;</li>
+									<li>Далее около 1 км пешком в восточном направлении (в сторону г. Уфа вдоль федеральной трассы М-7):</li>
+									<li>перейдите через улицу Машиностроительная в направлении автосалона «Renault» ТрансТехСервис</li>
+									<li>двигаясь в направлении Орловского кольца, обойдите здание автосалонов ТрансТехСервис «Renault» и «Hyundai»</li>
+									<li>идите вдоль Федеральной трассы М-7 в сторону г. Уфа, проходя мимо АвтоЗилЦентра и Набережночелнинского а/ц КАМАЗ</li>
+									<li>в следующем за Набережночелнинским а/ц КАМАЗ здании пройдите на первый этаж второго подъезда, на входе которого табличка «Искра Восток» с режимом работы</li>
 								</ul>
 							</div>
 						</div>
@@ -4962,6 +4972,13 @@
 					</div>
 				</div>
 			</div>
+			<script>
+				$('.contacts-routes__tabs a').on('click', (e) => {
+					e.preventDefault();
+					$(e.target).addClass('_active').siblings().removeClass('_active');
+					$(e.target.getAttribute('href')).addClass('_active').siblings().removeClass('_active');
+				});
+			</script>
 		</section>
 		<section id="requisits" class="contacts-section">
 			<div class="wrapper">
