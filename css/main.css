@@ -464,8 +464,9 @@
   content: none;
 }
 .contacts-gallery.flexslider .flex-prev {
-  display: none;
   left: 30px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+  transform: rotate(180deg);
 }
 .contacts-gallery.flexslider .flex-next {
   right: 30px;
