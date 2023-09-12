@@ -4683,10 +4683,10 @@
 					<img src="img/contacts-baner-cheln.png">
 				</div>
 				<div class="contacts__nav">
-					<a href="index.html" class="contacts__nav-link">Представительство в Москве</a>
-					<a href="rostov.html" class="contacts__nav-link">Представительство в Ростове-на-Дону</a>
-					<!-- <a href="cheln.html" class="contacts__nav-link">Представительство в Набережных Челнах</a> -->
-					<a href="#" class="contacts__nav-link">Купить в Вашем городе</a>
+					<a href="index.html" class="contacts__nav-link"><span class="_desctop">Представительство в Москве</span><span class="_mobile">Склад в Москве</span></a>
+					<a href="rostov.html" class="contacts__nav-link"><span class="_desctop">Представительство в Ростове-на-Дону</span><span class="_mobile">Склад в Ростове-на-Дону</span></a>
+					<!-- <a href="cheln.html" class="contacts__nav-link"><span class="_desctop">Представительство в Набережных Челнах</span><span class="_mobile">Склад в Набережных Челнах</span></a> -->
+					<a href="#" class="contacts__nav-link"><span>Купить в Вашем городе</span></a>
 				</div>
 				<div class="contacts__anchors">
 					<a href="#contacts" class="contacts__anchor-link">Контактные данные</a>
@@ -4706,29 +4706,29 @@
 									<b>Бесплатный звонок РФ</b>
 								</span>
 								<span class="contacts__item-value">
-									<img src="img/phone-icon.png">
+									<img src="img/phone-icon.svg">
 									<b>+7 (8552) 78-34-88</b>
 								</span>
 							</div>
 							<div class="contacts__item">
 								<span class="contacts__item-name">Магазин</span>
 								<span class="contacts__item-value">
-									<img src="img/phone-icon.png">
+									<img src="img/phone-icon.svg">
 									<b>+7 (8552) 78-34-88</b>
 								</span>
 							</div>
 							<div class="contacts__item">
 								<span class="contacts__item-name">Оптовый отдел</span>
 								<span class="contacts__item-value">
-									<img src="img/wa-icon.png">
-									<img src="img/phone-icon.png">
+									<img src="img/wa-icon.svg">
+									<img src="img/phone-icon.svg">
 									<b>+7 (927) 048-34-88</b>
 								</span>
 							</div>
 							<div class="contacts__item">
 								<span class="contacts__item-name">Электронная почта</span>
 								<span class="contacts__item-value">
-									<img src="img/mail-icon.png">
+									<img src="img/mail-icon.svg">
 									<b>zakaz@iskramotor.market</b>
 								</span>
 							</div>
@@ -4744,7 +4744,7 @@
 							<div class="contacts__item">
 								<span class="contacts__item-name">Время работы офиса</span>
 								<span class="contacts__item-value">
-									<img src="img/time-icon.png">
+									<img src="img/time-icon.svg">
 									<b>8:00 - 17:00</b>
 								</span>
 							</div>
@@ -4780,15 +4780,15 @@
 								<div class="personal-card__contacts">
 									<div>
 										<span class="personal-card__contacts-title">e-mail, skype</span>
-										<span class="personal-card__contacts-value">goncharov@iskramotor.ru</span>
+										<a href="mailto:goncharov@iskramotor.ru" class="personal-card__contacts-value">goncharov@iskramotor.ru</a>
 									</div>
 									<div>
 										<span class="personal-card__contacts-title">Телефон</span>
-										<span class="personal-card__contacts-value">+7 (495) 565-37-08 доб.105</span>
+										<a href="tel:+74955653708" class="personal-card__contacts-value">+7 (495) 565-37-08 доб.105</a>
 									</div>
 									<div>
 										<span class="personal-card__contacts-title">Сотовый</span>
-										<span class="personal-card__contacts-value">+7 (906) 789-74-50</span>
+										<a href="tel:+79067897450" class="personal-card__contacts-value">+7 (906) 789-74-50</a>
 									</div>
 									<div class="personal-card__socials">
 										<a href="viber://chat?number=79067897450" class="personal-card__socials-link" target="_blank" rel="nofollow">
@@ -4813,15 +4813,15 @@
 								<div class="personal-card__contacts">
 									<div>
 										<span class="personal-card__contacts-title">e-mail, skype</span>
-										<span class="personal-card__contacts-value">goncharov@iskramotor.ru</span>
+										<a href="mailto:goncharov@iskramotor.ru" class="personal-card__contacts-value">goncharov@iskramotor.ru</a>
 									</div>
 									<div>
 										<span class="personal-card__contacts-title">Телефон</span>
-										<span class="personal-card__contacts-value">+7 (495) 565-37-08 доб.105</span>
+										<a href="tel:+74955653708" class="personal-card__contacts-value">+7 (495) 565-37-08 доб.105</a>
 									</div>
 									<div>
 										<span class="personal-card__contacts-title">Сотовый</span>
-										<span class="personal-card__contacts-value">+7 (906) 789-74-50</span>
+										<a href="tel:+79067897450" class="personal-card__contacts-value">+7 (906) 789-74-50</a>
 									</div>
 									<div class="personal-card__socials">
 										<a href="viber://chat?number=79067897450" class="personal-card__socials-link" target="_blank" rel="nofollow">
@@ -4880,25 +4880,22 @@
 						</div>
 						<div class="contacts-routes__map">
 							<script>
-								function BX_SetPlacemarks_yam_moscow(map)
-								{
-									if(typeof window["BX_YMapAddPlacemark"] != 'function')
-									{
+								function BX_SetPlacemarks_yam_moscow(map) {
+									if(typeof window["BX_YMapAddPlacemark"] != 'function') {
 										/* If component's result was cached as html,
-										 * script.js will not been loaded next time.
-										 * let's do it manualy.
+										* script.js will not been loaded next time.
+										* let's do it manualy.
 										*/
-										(function(d, s, id)
-										{
+										(function(d, s, id) {
 											var js, bx_ym = d.getElementsByTagName(s)[0];
 											if (d.getElementById(id)) return;
 											js = d.createElement(s); js.id = id;
 											js.src = "/bitrix/components/bitrix/map.yandex.view/templates/.default/script.js";
 											bx_ym.parentNode.insertBefore(js, bx_ym);
 										}(document, 'script', 'bx-ya-map-js'));
+
 										var ymWaitIntervalId = setInterval( function(){
-												if(typeof window["BX_YMapAddPlacemark"] == 'function')
-												{
+												if(typeof window["BX_YMapAddPlacemark"] == 'function') {
 													BX_SetPlacemarks_yam_moscow(map);
 													clearInterval(ymWaitIntervalId);
 												}
@@ -4907,67 +4904,67 @@
 										return;
 									}
 									var arObjects = {PLACEMARKS:[],POLYLINES:[]};
-									arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'37.570835049033','LAT':'55.920232583816','TEXT':'Искра АЕ'});
+									arObjects.PLACEMARKS[arObjects.PLACEMARKS.length] = BX_YMapAddPlacemark(map, {'LON':'52.401458078711','LAT':'55.704994167815','TEXT':'Искра Юг'});
 								}
-								</script>
-								<div class="bx-yandex-view-layout">
-									<div class="bx-yandex-view-map">
-										<script>
-											var script = document.createElement('script');
-											script.src = 'https://enterprise.api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix&apikey=9290970a-7c87-4702-8459-5201d4fe0935';
-											(document.head || document.documentElement).appendChild(script);
-											script.onload = function () {
-												this.parentNode.removeChild(script);
-											};
-										</script>
-										<script>
-								if (!window.GLOBAL_arMapObjects)
-									window.GLOBAL_arMapObjects = {};
-								function init_yam_moscow()
-								{
-									if (!window.ymaps)
-										return;
-									var node = BX("BX_YMAP_yam_moscow");
-									node.innerHTML = '';
-									var map = window.GLOBAL_arMapObjects['yam_moscow'] = new ymaps.Map(node, {
-										center: [55.920232583816, 37.570835049033],
-										zoom: 18,
-										type: 'yandex#map'
-									});
-									map.behaviors.enable("scrollZoom");
-									map.behaviors.enable("dblClickZoom");
-									map.behaviors.enable("drag");
-									if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
-										map.behaviors.disable("rightMouseButtonMagnifier");
-									map.controls.add('zoomControl');
-									map.controls.add('smallZoomControl');
-									map.controls.add('miniMap');
-									map.controls.add('typeSelector');
-									map.controls.add('scaleLine');
-									if (window.BX_SetPlacemarks_yam_moscow)
-									{
-										window.BX_SetPlacemarks_yam_moscow(map);
-									}
-								}
-								(function bx_ymaps_waiter(){
-									if(typeof ymaps !== 'undefined')
-										ymaps.ready(init_yam_moscow);
-									else
-										setTimeout(bx_ymaps_waiter, 100);
-								})();
+							</script>
+							<div class="bx-yandex-view-layout">
+								<div class="bx-yandex-view-map">
+									<script>
+										var script = document.createElement('script');
+										script.src = 'https://enterprise.api-maps.yandex.ru/2.0/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix&apikey=9290970a-7c87-4702-8459-5201d4fe0935';
+										(document.head || document.documentElement).appendChild(script);
+										script.onload = function () {
+											this.parentNode.removeChild(script);
+										};
+									</script>
+									<script>
+											if (!window.GLOBAL_arMapObjects)
+												window.GLOBAL_arMapObjects = {};
+											function init_yam_moscow() {
+												if (!window.ymaps)
+													return;
+												var node = BX("BX_YMAP_yam_moscow");
+												node.innerHTML = '';
+												var map = window.GLOBAL_arMapObjects['yam_chln'] = new ymaps.Map(node, {
+													center: [55.705070998157, 52.401226347402],
+													zoom: 18,
+													type: 'yandex#map'
+												});
+												map.behaviors.enable("scrollZoom");
+												map.behaviors.enable("dblClickZoom");
+												map.behaviors.enable("drag");
+												if (map.behaviors.isEnabled("rightMouseButtonMagnifier"))
+													map.behaviors.disable("rightMouseButtonMagnifier");
+												map.controls.add('zoomControl');
+												map.controls.add('smallZoomControl');
+												map.controls.add('miniMap');
+												map.controls.add('typeSelector');
+												map.controls.add('scaleLine');
+												if (window.BX_SetPlacemarks_yam_moscow)
+												{
+													window.BX_SetPlacemarks_yam_moscow(map);
+												}
+											}
+
+											(function bx_ymaps_waiter(){
+												if(typeof ymaps !== 'undefined')
+													ymaps.ready(init_yam_moscow);
+												else
+													setTimeout(bx_ymaps_waiter, 100);
+											})();
 								
-								/* if map inits in hidden block (display:none)
-								*  after the block showed
-								*  for properly showing map this function must be called
-								*/
-								function BXMapYandexAfterShow(mapId)
-								{
-									if(window.GLOBAL_arMapObjects[mapId] !== undefined)
-										window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
-								}
-								</script>
-								<div id="BX_YMAP_yam_moscow" class="bx-yandex-map" style="height: 500px; width: 700px;max-width: 100%;">загрузка карты...</div>	</div>
+											/* if map inits in hidden block (display:none)
+											*  after the block showed
+											*  for properly showing map this function must be called
+											*/
+											function BXMapYandexAfterShow(mapId) {
+												if(window.GLOBAL_arMapObjects[mapId] !== undefined)
+													window.GLOBAL_arMapObjects[mapId].container.fitToViewport();
+											}
+									</script>
+									<div id="BX_YMAP_yam_moscow" class="bx-yandex-map" style="height: 500px; width: 700px;max-width: 100%;">загрузка карты...</div>
 								</div>
+							</div>
 						</div>
 					</div>
 				</div>

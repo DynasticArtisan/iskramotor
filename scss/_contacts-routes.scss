@@ -57,6 +57,14 @@
             content: none;
         }
     }
+    a {
+        text-decoration: underline;
+    }
+}
+.contacts-routes__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .contacts-routes__tabs-content:not(._active) {
     display: none;

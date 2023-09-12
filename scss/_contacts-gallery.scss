@@ -36,7 +36,7 @@
     .flex-prev {
         left: 30px;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
-        transform: rotate(180deg);
+        transform: rotate(180deg) translateY(50%);
     }
 
     .flex-next {
