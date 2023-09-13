@@ -111,6 +111,9 @@
     span {
         width: 197px;
     }
+    &:hover {
+        text-decoration: underline;
+    }
     @media (max-width: 991px) {
         max-width: 290px;
         justify-content: space-between;

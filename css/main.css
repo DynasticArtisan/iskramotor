@@ -675,6 +675,9 @@
 .requisits__action span {
   width: 197px;
 }
+.requisits__action:hover {
+  text-decoration: underline;
+}
 @media (max-width: 991px) {
   .requisits__action {
     max-width: 290px;
