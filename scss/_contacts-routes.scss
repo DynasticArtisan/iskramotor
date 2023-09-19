@@ -54,7 +54,7 @@
     ul li {
         list-style-type: unset;
         &:before {
-            content: none;
+            content: none!important;
         }
     }
     a {
