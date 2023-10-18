@@ -716,6 +716,10 @@
   line-height: 24px;
   max-width: 500px;
 }
+.subscription__text a {
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 .subscription__contacts {
   display: flex;
@@ -773,7 +777,7 @@
     grid-auto-flow: column;
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
-    width: fit-content;
+    justify-content: center;
     margin: 0 auto;
   }
   .subscription__contacts-item {
@@ -789,8 +793,11 @@
 }
 @media (max-width: 480px) {
   .subscription__contacts {
-    grid-auto-flow: unset;
-    gap: 30px;
+    gap: 20px;
+  }
+  .subscription__contacts-item {
+    width: 120px;
+    height: 60px;
   }
 }
 .wrapper {
