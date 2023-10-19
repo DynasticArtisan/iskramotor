@@ -688,16 +688,20 @@
 }
 
 .subscription {
-  position: relative;
   padding-top: 55px;
   padding-bottom: 35px;
+}
+
+.subscription__section {
+  position: relative;
 }
 
 .subscription__image {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: 60px;
+  top: 10px;
+  height: 100%;
 }
 
 .subscription__title {
