@@ -806,6 +806,12 @@
   margin-bottom: 23px;
 }
 
+.discount-badge {
+  background-color: rgb(255, 68, 68);
+  width: 77px;
+  height: 35px;
+}
+
 .bye-product {
   width: 268px;
   position: relative;
@@ -912,6 +918,8 @@
   position: relative;
   color: rgb(255, 255, 255);
   font-weight: 700;
+  text-align: left;
+  padding-left: 42px;
   background: rgb(0, 92, 255);
   border: none;
 }
