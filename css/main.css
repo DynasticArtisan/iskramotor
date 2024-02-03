@@ -699,6 +699,57 @@
   }
 }
 
+.product-info-block {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.product-info-block__reviews-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-rating-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.product-rating-wrapper__rate-link,
+.product-info-block__video-link,
+.product-info-block__book-link {
+  color: #416a88;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product-info-block__description-link {
+  color: #385d78;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product-info-block__purchased-count,
+.product-info-block__product-code {
+  color: #333;
+}
+
+.product-info-block__product-code {
+  margin-left: auto;
+}
+
 .container_inner {
   border-right: none;
 }
