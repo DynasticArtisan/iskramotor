@@ -8426,6 +8426,8 @@
 
                                     <!-- СТРУКТУРУ ОСТАВИТЬ КАК ЕСТЬ, С ПОМОЩЬЮ СТИЛЕЙ ПРИВЕСТИ В ПОРЯДОК -->
                                     <div class="product-info-block">
+                                        <div class="product-info-block__inner-block">
+
                                         <div class="product-info-block__reviews-info">
                                             <div class="product-rating-wrapper" >
                                                     <!-- <div class="product-rating-stars">
@@ -8450,10 +8452,16 @@
                                             <span data-targetordered="" class="product-rating-wrapper__rate-link">Оценить</span>
                                         </div>
                                         <span class="product-info-block__video-link" data-targetcheapert="">Видео</span>
-                                        <span data-text="" class="product-info-block__purchased-count">Куплен <span class="purchased-count-value">35084</span> раз</span>
-                                        <span data-targetordered="" class="product-info-block__book-link">Забронировать</span>
-                                        <span data-targetordered="" class="product-info-block__description-link">Перейти к описанию</span>
-                                        <span itemprop="" class="product-info-block__product-code" data-iskraae="">Код товара: <span class="product-code-value">IMS301316</span></span>
+                                        </div>
+
+                                        <div class="product-info-block__inner-block">
+                                            <span data-text="" class="product-info-block__purchased-count">Куплен <span class="purchased-count-value">35084</span> раз</span>
+                                            <span data-targetordered="" class="product-info-block__book-link">Забронировать</span>
+                                        </div>
+                                        <div class="product-info-block__inner-block">
+                                            <span data-targetordered="" class="product-info-block__description-link">Перейти к описанию</span>
+                                            <span itemprop="" class="product-info-block__product-code" data-iskraae="">Код товара: <span class="product-code-value">IMS301316</span></span>
+                                        </div>
                                     </div>
 
                                     <!-- ################################################################################################################# -->
@@ -8481,37 +8489,43 @@
                                     <div class="product-details">
                                         <div class="product-media-gallery">
                                             <div class="product-images">
-                                                <div class="product-images__carousel">
-                                                    <img class="carousel__control-prev" src="./img/product/Vector 8.svg"
-                                                        alt="">
-                                                    <div class="carousel-images">
-                                                        <div class="carousel-images__item carousel-images__item-active">
-                                                            <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                alt="">
+                                                    <div class="product-images__carousel">
+                                                        <img class="carousel__control-prev" src="./img/product/Vector 8.svg"
+                                                            alt="">
+                                                        <div class="carousel-images">
+                                                            <div class="carousel-images__item carousel-images__item-active">
+                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="carousel-images__item">
+                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="carousel-images__item">
+                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="carousel-images__item">
+                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
+                                                                    alt="">
+                                                            </div>
                                                         </div>
-                                                        <div class="carousel-images__item">
-                                                            <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="carousel-images__item">
-                                                            <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                alt="">
-                                                        </div>
-                                                        <div class="carousel-images__item">
-                                                            <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                alt="">
-                                                        </div>
+                                                        <img class="carousel__control-next" src="./img/product/Vector 9.svg"
+                                                            alt="">
                                                     </div>
-                                                    <img class="carousel__control-next" src="./img/product/Vector 9.svg"
-                                                        alt="">
-                                                </div>
                                                 <div class="product-images__image">
                                                     <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
                                                         alt="">
                                                 </div>
                                             </div>
+
+                                            <div class="empty-image">
+                                                <img src="" alt="">
+                                                <a href="">Запросить фото</a>
+                                            </div>
+
                                             <div class="customer-media-content">
-                                                <a href="#">Фото и видео от покупателей</a>
+                                                <a class="customer-media-content__link" href="#">Фото и видео от покупателей</a>
                                                 <div class="customer-carousel">
                                                     <img class="customer-carousel__control-prev"
                                                         src="./img/product/Vector 11.svg" alt="">
@@ -8567,9 +8581,13 @@
                                                     class="additional-bye-btn additional-bye-btn__one-click-bye">Купить
                                                     в 1
                                                     клик</button>
-                                                <button class="additional-bye-btn additional-bye-btn__ozon-bye">Купить
-                                                    на
-                                                    <img src="./img/product/OZON.svg" alt="Купить на OZON">
+                                                <button class="additional-bye-btn additional-bye-btn__ozon-bye">
+                                                    <div class="ozon-bye-btn">
+                                                        <p>Купить на</p>
+                                                        <img src="./img/product/OZON.svg" alt="Купить на OZON">
+                                                    </div>
+                                                    
+                                                    
                                                 </button>
                                             </div>
                                             <div class="additional-info-block">
@@ -8594,33 +8612,71 @@
                                                     <a href="#" class="related-product-card">
                                                         <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
                                                             alt="" class="related-product-card__image">
-                                                        <div class="product-info">
-                                                            <p class="product-info__name">Стартер IMS101775</p>
-                                                            <p class="product-info__brand">Бренд: Iskramotor</p>
-                                                        </div>
-                                                        <div class="price-and-shipping">
-                                                            <p class="price-and-shipping__price">14 500 <span>₽</span> с НДС</p>
-                                                            <div class="price-and-shipping__shipping-option">
-                                                                <p>Отгрузка
-                                                                    сегодня</p>
+                                                        <div class="related-product-card__info">
+                                                            <div class="product-info">
+                                                                <p class="product-info__name">Стартер IMS101775</p>
+                                                                <p class="product-info__brand">Бренд: Iskramotor</p>
+                                                            </div>
+                                                            
+                                                            <div class="price-and-shipping">
+                                                                <p class="price-and-shipping__price">14 500 <span>₽</span> с НДС</p>
+                                                                <div class="price-and-shipping__shipping-option">
+                                                                    <p>Отгрузка
+                                                                        сегодня</p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </a>
+                                                    
                                                     <a href="#" class="related-product-card">
                                                         <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
                                                             alt="" class="related-product-card__image">
-                                                        <div class="product-info">
-                                                            <p class="product-info__name">Стартер IMS101775</p>
-                                                            <p class="product-info__brand">Бренд: Iskramotor</p>
-                                                        </div>
-                                                        <div class="price-and-shipping">
-                                                            <p class="price-and-shipping__price">14 500 <span>₽</span> с НДС</p>
+                                                        <div class="related-product-card__info">
+                                                            <div class="product-info">
+                                                                <p class="product-info__name">Стартер IMS101775</p>
+                                                                <p class="product-info__brand">Бренд: Iskramotor</p>
+                                                            </div>
+                                                            
+                                                            <div class="price-and-shipping">
+                                                                <p class="price-and-shipping__price">14 500 <span>₽</span> с НДС</p>
+                                                                
+                                                            </div>
                                                         </div>
                                                     </a>
                                                 </div>
+                                                    
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="advantages-block">
+                                        <div class="advantage-card">
+                                            <div class="advantage-card__image">
+                                                <img src="./img/product/hand.svg" alt="" >
+                                            </div>
+                                            <p class="advantage-card__text">Выгодные условия<br/><span>для оптовых покупателей</span></p>
+                                        </div>
+                                        <div class="advantage-card">
+                                            <div class="advantage-card__image">
+                                                <img src="./img/product/gift.svg" alt="" class="advantage-card__image">
+                                            </div>
+                                            <p class="advantage-card__text">Подарки подписчикам<br/><span>telegram-канала</span></p>
+                                        </div>
+                                        <div class="advantage-card">
+                                            <div class="advantage-card__image">
+                                                <img src="./img/product/delivery.svg" alt="" class="advantage-card__image">
+                                            </div>
+                                            <p class="advantage-card__text">Отгрузка в течение 24-х часов<br/><span>Узнать сроки и стоимость доставки</span></p>
+                                        </div>
+                                        <div class="advantage-card">
+                                            <div class="advantage-card__image">
+                                                <img src="./img/product/garanty.svg" alt="" class="advantage-card__image">
+                                            </div>
+                                            <p class="advantage-card__text">Гарантия<br/>от производителя</p>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                    
 
                                     <!-- ################################################################################################################# -->
                                     <!-- ################################################################################################################# -->
@@ -8635,13 +8691,7 @@
                                                     Технические характеристики</li>
                                                 <li class="product_options_raz"></li>
                                                 <li id="product-options-primenenie"
-                                                    class="product_options_head_unactive product_options_head_unactive_prim">
-                                                    Применение
-                                                </li>
-                                                <li class="product_options_raz"></li>
-                                                <li id="product-options-analogi"
-                                                    class="product_options_head_unactive product_options_head_unactive_analog">
-                                                    Аналоги
+                                                    class="product_options_head_unactive product_options_hnone
                                                 </li>
                                                 <li class="product_options_raz"></li>
                                                 <li id="product-options-sootvetstvie"
