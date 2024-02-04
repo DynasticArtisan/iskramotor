@@ -391,7 +391,7 @@
     <script src="https://iskramotor.market/bitrix/templates/aspro_max/js/jquery.uniform.min.js?16880160898308"></script>
     <script
         src="https://iskramotor.market/bitrix/templates/aspro_max/vendor/js/carousel/owl/owl.carousel.js?168801608989992"></script>
-    <script src="https://iskramotor.market/bitrix/templates/aspro_max/vendor/js/footable.js?1688028609268108"></script>
+    <!-- <script src="https://iskramotor.market/bitrix/templates/aspro_max/vendor/js/footable.js?1688028609268108"></script> -->
     <script
         src="https://iskramotor.market/bitrix/templates/aspro_max/vendor/js/ResizeSensor.js?168801608911190"></script>
     <script
@@ -8519,35 +8519,52 @@
                                                 </div>
                                             </div>
 
-                                            <div class="empty-image">
-                                                <img src="" alt="">
-                                                <a href="">Запросить фото</a>
-                                            </div>
-
-                                            <div class="customer-media-content">
-                                                <a class="customer-media-content__link" href="#">Фото и видео от покупателей</a>
-                                                <div class="customer-carousel">
-                                                    <img class="customer-carousel__control-prev"
-                                                        src="./img/product/Vector 11.svg" alt="">
-                                                    <div class="customer-carousel-images">
-                                                        <div class="customer-carousel-images__item">
-                                                            <img src="./img/product/image 2.png" alt="">
-                                                        </div>
-                                                        <div class="customer-carousel-images__item">
-                                                            <img src="./img/product/image 3.png" alt="">
-                                                        </div>
-                                                        <div class="customer-carousel-images__item">
-                                                            <img src="./img/product/image 4.png" alt="">
-                                                        </div>
-                                                        <div class="customer-carousel-images__item">
-                                                            <img src="./img/product/image 5-5.png" alt="">
-                                                        </div>
-                                                        <div class="customer-carousel-images__item">
-                                                            <img src="./img/product/image 5.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <img class="customer-carousel__control-next"
-                                                        src="./img/product/Vector 10.svg" alt="">
+                                            <div class="product-customer-media">
+                                                <a class="product-customer-media__title" href="#">Фото и видео от покупателей</a>
+                                                <div class="product-customer-media__slider flexslider">
+                                                    <ul class="slides">
+                                                        <li>
+                                                            <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 2.png">
+                                                                <img src="./img/product/image 2.png" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                                <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 3.png">
+                                                                    <img src="./img/product/image 3.png" alt="">
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 4.png">
+                                                                    <img src="./img/product/image 4.png" alt="">
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 5-5.png">
+                                                                    <img src="./img/product/image 5-5.png" alt="">
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 5.png">
+                                                                    <img src="./img/product/image 5.png" alt="">
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a class="product-customer-media__slide" data-lightbox="customer-media" href="./img/product/image 2.png">
+                                                                    <img src="./img/product/image 2.png" alt="">
+                                                                </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- <img class="customer-carousel__control-next"
+                                                        src="./img/product/Vector 10.svg" alt=""> -->
+                                                    <script>
+                                                        $('.product-customer-media__slider').flexslider({
+                                                            animation: "slide",
+                                                            animationLoop: false,
+                                                            itemWidth: 84,
+                                                            itemMargin: 16,
+                                                            controlNav: false
+                                                        });	
+                                                    </script>
                                                 </div>
                                             </div>
                                         </div>
@@ -17391,16 +17408,16 @@
         }
     </script>
     <script>
-        var arBasketAspro = {
-            'BASKET': [],
-            'DELAY': [],
-            'SUBSCRIBE': [],
-            'NOT_AVAILABLE': [],
-            'COMPARE': []
-        };
-        $(document).ready(function () {
-            setBasketStatusBtn();
-        });
+        // var arBasketAspro = {
+        //     'BASKET': [],
+        //     'DELAY': [],
+        //     'SUBSCRIBE': [],
+        //     'NOT_AVAILABLE': [],
+        //     'COMPARE': []
+        // };
+        // $(document).ready(function () {
+        //     setBasketStatusBtn();
+        // });
     </script>
     <!--'end_frame_cache_basketitems-block'-->
     <div class="basket_fly_forms basket_fill_WHITE">
