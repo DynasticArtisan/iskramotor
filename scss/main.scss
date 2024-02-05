@@ -1,15 +1,16 @@
-@import 'contacts';
-@import 'contacts-personal';
-@import 'contacts-routes';
-@import 'contacts-video';
-@import 'contacts-gallery';
-@import 'contacts-requisits';
-@import 'product-details';
-@import 'subscription';
+@import "contacts";
+@import "contacts-personal";
+@import "contacts-routes";
+@import "contacts-video";
+@import "contacts-gallery";
+@import "contacts-requisits";
+@import "product-details";
+@import "empty-product-details";
+@import "subscription";
 
 .wrapper {
-    width: 100%;
-    max-width: 1408px;
-    padding: 0px 30px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1408px;
+  padding: 0px 30px;
+  margin: 0 auto;
 }

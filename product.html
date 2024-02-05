@@ -8449,17 +8449,17 @@
                                                     (<span class="rating-count__value">16</span>)
                                                 </div>
                                             </div>
-                                            <span data-targetordered="" class="product-rating-wrapper__rate-link">Оценить</span>
+                                            <span data-targetordered="" class="product-rating-wrapper__rate product-details-link">Оценить</span>
                                         </div>
-                                        <span class="product-info-block__video-link" data-targetcheapert="">Видео</span>
+                                        <span class="product-info-block__video product-details-link" data-targetcheapert="">Видео</span>
                                         </div>
 
-                                        <div class="product-info-block__inner-block">
+                                        <div class="product-info-block__inner-block product-info-block__inner-block--reverse">
                                             <span data-text="" class="product-info-block__purchased-count">Куплен <span class="purchased-count-value">35084</span> раз</span>
-                                            <span data-targetordered="" class="product-info-block__book-link">Забронировать</span>
+                                            <span data-targetordered="" class="product-info-block__book product-details-link">Забронировать</span>
                                         </div>
                                         <div class="product-info-block__inner-block">
-                                            <span data-targetordered="" class="product-info-block__description-link">Перейти к описанию</span>
+                                            <span data-targetordered="" class="product-info-block__description product-details-link">Перейти к описанию</span>
                                             <span itemprop="" class="product-info-block__product-code" data-iskraae="">Код товара: <span class="product-code-value">IMS301316</span></span>
                                         </div>
                                     </div>
@@ -8488,7 +8488,12 @@
 
                                     <div class="product-details">
                                         <div class="product-media-gallery">
-                                            <div class="product-images">
+                                            <!-- <div class="empty-product-images">
+                                                <img  src="./img/product/empty-image.svg" alt="empty image">
+                                                <p>Нет фото товара</p>
+                                                <a class="product-details-link" href="#">Запросить фото</a>
+                                            </div> -->
+                                            <div class="product-images">                                                
                                                 <div class="product-images__thumbs flexslider">
                                                     <ul class="slides">
                                                         <li>
@@ -8552,7 +8557,6 @@
                                                         sync: ".product-images__thumbs"
                                                     });
                                                 </script>
-                                                <!-- <div class="product-images__placeholder"></div> -->
                                             </div>
 
                                             <div class="product-customer-media">
@@ -8590,8 +8594,7 @@
                                                                 </a>
                                                         </li>
                                                     </ul>
-                                                    <!-- <img class="customer-carousel__control-next"
-                                                        src="./img/product/Vector 10.svg" alt=""> -->
+                                                    
                                                     <script>
                                                         $('.product-customer-media__slider').flexslider({
                                                             animation: "slide",
@@ -8603,11 +8606,10 @@
                                                     </script>
                                                 </div>
                                             </div>
-
                                         </div>
 
                                         <div class="product-price-section">
-                                            <div class="product-offer-card">
+                                            <!-- <div class="product-offer-card">
                                                 <div class="discount-badge">
                                                     - <span>50%</span>
                                                 </div>
@@ -8627,45 +8629,53 @@
 
                                                     <button class="bye-product__bye-btn" type="button">Купить</button>
                                                 </div>
-                                                <a href="#" class="product-offer-card__prise-request">Запросить оптовую
+  
+                                                <a href="#" class="product-offer-card__prise-request product-details-link">Запросить оптовую
                                                     цену</a>
+                                            </div> -->
+                                            <div class="empty-offer-card">
+                                                <a href="#" class="empty-offer-card__prise-request product-details-link">Запросить стоимость с НДС</a>
+                                                <button class="empty-offer-card__check-analogs" >проверить аналоги</button>                    
+                                                
                                             </div>
-                                            <div class="additional-bye-btns">
+                                            <div class="product-request-btns">
                                                 <button
-                                                    class="additional-bye-btn additional-bye-btn__one-click-bye">Купить
-                                                    в 1
-                                                    клик</button>
-                                                <button class="additional-bye-btn additional-bye-btn__ozon-bye">
-                                                    <div class="ozon-bye-btn">
-                                                        <p>Купить на</p>
-                                                        <img src="./img/product/OZON.svg" alt="Купить на OZON">
-                                                    </div>
-                                                    
-                                                    
-                                                </button>
+                                                    class="product-request-btn product-request-btn__one-click-request">запрос в 1 клик</button>
+                                                <button
+                                                    class="product-request-btn product-request-btn__whatsapp-request">запрос по WhatsApp</button>
+                                                
                                             </div>
                                             <div class="additional-info-block">
                                                 <div class="additional-info">
                                                     <img src="./img/product/rub.svg" alt=""
                                                         class="additional-info__image">
-                                                    <a href="#" class="additional-info__link">Как вернуть 2 000 рублей
+                                                    <a href="#" class="additional-info__link product-details-link">Как вернуть 2 000 рублей
+                                                        после
+                                                        покупки?</a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="additional-info-block">
+                                                <div class="additional-info">
+                                                    <img src="./img/product/rub.svg" alt=""
+                                                        class="additional-info__image">
+                                                    <a href="#" class="additional-info__link product-details-link">Как вернуть 2 000 рублей
                                                         после
                                                         покупки?</a>
                                                 </div>
                                                 <div class="additional-info">
                                                     <img src="./img/product/confirm.svg" alt=""
                                                         class="additional-info__image">
-                                                    <a href="#" class="additional-info__link">В наличии в Москве,
+                                                    <a href="#" class="additional-info__link product-details-link">В наличии в Москве,
                                                         Ростове и Набережных Челнах</a>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="related-products">
                                                 <h3 class="related-products__title">Профессионалы также выбирают:</h3>
                                                 <div class="related-products__cards">
                                                     <a href="#" class="related-product-card">
-                                                        <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
-                                                            alt="" class="related-product-card__image">
+                                                        <!-- <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
+                                                            alt="" class="related-product-card__image"> -->
                                                         <div class="related-product-card__info">
                                                             <div class="product-info">
                                                                 <p class="product-info__name">Стартер IMS101775</p>
