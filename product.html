@@ -8489,34 +8489,70 @@
                                     <div class="product-details">
                                         <div class="product-media-gallery">
                                             <div class="product-images">
-                                                    <div class="product-images__carousel">
-                                                        <img class="carousel__control-prev" src="./img/product/Vector 8.svg"
-                                                            alt="">
-                                                        <div class="carousel-images">
-                                                            <div class="carousel-images__item carousel-images__item-active">
-                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="carousel-images__item">
-                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="carousel-images__item">
-                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                            <div class="carousel-images__item">
-                                                                <img src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"
-                                                                    alt="">
-                                                            </div>
-                                                        </div>
-                                                        <img class="carousel__control-next" src="./img/product/Vector 9.svg"
-                                                            alt="">
-                                                    </div>
-                                                <div class="product-images__image">
-                                                    <img src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"
-                                                        alt="">
+                                                <div class="product-images__thumbs flexslider">
+                                                    <ul class="slides">
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                    </ul>
                                                 </div>
+                                                <div class="product-images__slider flexslider">
+                                                    <ul class="slides">
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/270ff8ad7d93fffea1c6739f9b162855.jpeg"/>
+                                                        </li>
+                                                        <li>
+                                                            <img class="product-images__thumb-img" src="./img/product/e407aca94617d4acbed49af078a4ac18.jpeg"/>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <script>
+                                                    $('.product-images__thumbs').flexslider({
+                                                        animation: "slide",
+                                                        animationLoop: false,
+                                                        slideshow: false,
+                                                        direction: "vertical",
+                                                        controlNav: false,
+                                                        directionNav: true,
+                                                        asNavFor: '.product-images__slider'
+                                                    });
+                                                    $('.product-images__slider').flexslider({
+                                                        animation: "fade",
+                                                        animationLoop: false,
+                                                        slideshow: false,
+                                                        controlNav: false,
+                                                        directionNav: false,
+                                                        sync: ".product-images__thumbs"
+                                                    });
+                                                </script>
+                                                <!-- <div class="product-images__placeholder"></div> -->
                                             </div>
 
                                             <div class="product-customer-media">
@@ -8567,6 +8603,7 @@
                                                     </script>
                                                 </div>
                                             </div>
+
                                         </div>
 
                                         <div class="product-price-section">
