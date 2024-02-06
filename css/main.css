@@ -1423,7 +1423,7 @@
   padding-right: 16px;
   padding-bottom: 7px;
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .related-product-card {
     height: 124px;
     padding-left: 20px;
@@ -1449,7 +1449,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .related-product-card__info {
     flex-direction: column;
     justify-content: center;
