@@ -14,15 +14,14 @@
 .product-offer__price {
     margin-top: 16px;
     position: relative;
-    // display: flex;
-    // align-items: center;
-    // gap: 10px;
     color: #416A88;
     font-size: 30px;
-    font-weight: 600;
     line-height: 36px;
     white-space: nowrap;
-
+    b {
+        color: inherit;
+        font-weight: 600;
+    }
 }
 
 .product-offer__prc-old {

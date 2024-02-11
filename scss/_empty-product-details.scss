@@ -36,48 +36,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-bottom: 23px;
+  gap: 12px 25px;
+  margin-bottom: 24px;
 
   @media (max-width: 530px) {
     flex-direction: column;
-    gap: 12px;
     margin-bottom: 32px;
   }
 }
 .product-requests__btn {
+  cursor: pointer;
+  display: block;
   width: 100%;
   min-width: 155px;
   max-width: 540px;
-  height: 40px;
-  border-radius: 3px;
-  font-size: 11px;
-
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
   padding: 12px;
-
-  @media (max-width: 530px) {
-    font-size: 12px;
-  }
-}
-.product-requests__btn__one-click-request {
-  color: #416a88;
+  border-radius: 3px;
+  
+  font-size: 12px;
   font-weight: 600;
   line-height: 15.7px;
   letter-spacing: 0.8px;
+  text-align: center;
+  text-transform: uppercase;
 
-  background: none;
-  border: 1px solid #416a88;
-}
-.product-requests__btn__whatsapp-request {
-  color: #fff;
-  font-weight: 700;
-  line-height: 15.7px;
-  letter-spacing: 0.8px;
+  &._outlined {
+    border: 1px solid #416a88;
+    color: #416a88;
+    background-color: transparent;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+      background-color: #416a88;
+    }
+  }
 
-  background-color: #1fc95e;
-  border: none;
+  &._whatsapp {
+    border: none;
+    color: #fff;
+    background-color: #1fc95e;
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: #34d66f;
+    }
+  }
 }
+
+

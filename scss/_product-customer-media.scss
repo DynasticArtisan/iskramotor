@@ -7,9 +7,7 @@
 .product-customer-media__title {
     font-size: 15px;
     line-height: 20px;
-    text-decoration: underline;
     text-decoration-color: #385d78;
-    text-align: left;
     color: #385d78;
   
     @media (max-width: 672px) {
@@ -78,17 +76,18 @@
 }
 
 .product-customer-media__slide {
+    display: block;
     width: 84px;
     height: 84px;
-    @media (max-width: 672px) {
-      width: 62px;
-      height: 62px;
-    }
+    border: 1px solid transparent;
   
     img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
+    }
+    &:hover {
+      background-color: #416a88;
     }
 }
