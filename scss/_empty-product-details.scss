@@ -32,10 +32,11 @@
   text-align: center;
 }
 
-.product-request-btns {
+.product-requests {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 23px;
 
@@ -45,21 +46,24 @@
     margin-bottom: 32px;
   }
 }
-.product-request-btn {
+.product-requests__btn {
   width: 100%;
   min-width: 155px;
+  max-width: 540px;
   height: 40px;
   border-radius: 3px;
   font-size: 11px;
 
   text-align: center;
   text-transform: uppercase;
+  display: block;
+  padding: 12px;
 
   @media (max-width: 530px) {
     font-size: 12px;
   }
 }
-.product-request-btn__one-click-request {
+.product-requests__btn__one-click-request {
   color: #416a88;
   font-weight: 600;
   line-height: 15.7px;
@@ -68,7 +72,7 @@
   background: none;
   border: 1px solid #416a88;
 }
-.product-request-btn__whatsapp-request {
+.product-requests__btn__whatsapp-request {
   color: #fff;
   font-weight: 700;
   line-height: 15.7px;
