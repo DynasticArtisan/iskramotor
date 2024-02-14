@@ -119,7 +119,7 @@
 
 @media (max-width: 1280px) {
   .product-details__layout {
-    grid-template-columns: unset;
+    grid-template-columns: 100%;
   }
   .product-details__left,
   .product-details__right {

@@ -1,7 +1,7 @@
 .product-customer-media {
     display: block;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 25px;
   }
   
 .product-customer-media__title {
@@ -20,56 +20,46 @@
     margin-top: 20px;
     padding: 0 34px;
     position: relative;
-    &.flexslider {
-      height: fit-content !important;
-      .flex-direction-nav {
-        display: block !important;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        pointer-events: none;
-        * {
-          pointer-events: all;
-        }
-        .flex-nav-prev,
-        .flex-nav-next {
-          position: absolute;
-          margin: 0;
-          background: none;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-        .flex-nav-prev {
-          left: 0;
-          right: unset;
-        }
-        .flex-nav-next {
-          right: 0;
-          left: unset;
-        }
-        .flex-next,
-        .flex-prev {
-          position: static;
-          display: block;
-          margin: 0;
-          width: 20px;
-          height: 20px;
-          background: url(/img/flex-nav-arrow.svg) center
-            no-repeat;
-          &:before {
-            content: none;
-          }
-        }
-        .flex-prev {
-          transform: rotate(-90deg);
-        }
-        .flex-next {
-          transform: rotate(90deg);
-        }
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    .swiper {
+      flex-grow: 1;
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+      left: 0;
+      padding: 0 5px;
+    }
+
+    .swiper-button-next {
+      position: absolute;
+      right: 0;
+      padding: 0 5px;
+    }
+
+    .swiper-button-disabled {
+      display: none;
+    }
+
+    .swiper-slide {
+      width: 84px;
+      height: 84px;
+      border: 1px solid transparent;
+      &:hover {
+        border-color: #416A88;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
+
     @media (max-width: 672px) {
       margin-top: 16px;
     }
