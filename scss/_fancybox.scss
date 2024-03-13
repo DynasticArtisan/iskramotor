@@ -57,6 +57,11 @@
     }
     .fancybox-slide {
         padding: 88px 44px;
+        &.fancybox-slide--video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &.fancybox-show-toolbar {
@@ -71,4 +76,9 @@
 
     }
     
+    @media (max-width: 767px) {
+        .fancybox-navigation .fancybox-button {
+            top: calc(100% - 100px);
+        }
+    }
 }
