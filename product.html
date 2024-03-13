@@ -10332,7 +10332,6 @@
                                                     <a href="#" class="spares-card__title">Передняя крышка стартера Mahle MSX 794, 16.281.793 (IMSS381793)</a>
                                                     <ul class="spares-card__info">
                                                         <li>Бренд: MAHLE</li>
-                                                        <li>Напряжение: 12 В</li>
                                                     </ul>
                                                     <a href="#" class="spares-card__btn">Купить</a>
                                                 </div>
@@ -10389,10 +10388,25 @@
                                                 type: 'bullets',
                                                 clickable: true
                                             },
-                                            slidesPerView: 'auto',
                                             navigation: {
                                                 prevEl: '.product-spares .swiper-button-prev',
                                                 nextEl: '.product-spares .swiper-button-next'
+                                            },
+                                            spaceBetween: 8,
+                                            slidesPerView: 'auto',
+                                            breakpoints: {
+                                                768: {
+                                                    slidesPerView: 3,
+                                                },
+                                                992: {
+                                                    slidesPerView: 2,
+                                                },
+                                                1100: {
+                                                    slidesPerView: 3,
+                                                },
+                                                1280: {
+                                                    slidesPerView: 4,
+                                                }
                                             }
                                         });
                                     </script>

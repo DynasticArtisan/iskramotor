@@ -1644,7 +1644,7 @@
   user-select: none;
 }
 .product-spares .swiper-slide {
-  margin: 2px;
+  height: unset;
 }
 .product-spares .swiper-button-prev {
   position: absolute;
@@ -1699,9 +1699,13 @@
 }
 
 .spares-card {
-  max-width: 300px;
   padding: 12px;
   border: 1px solid #cdcdcd;
+}
+@media (max-width: 767px) {
+  .spares-card {
+    max-width: 300px;
+  }
 }
 
 .spares-card__layout {
