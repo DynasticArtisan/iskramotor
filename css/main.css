@@ -2179,6 +2179,9 @@
   .fancybox-container .fancybox-navigation .fancybox-button {
     top: calc(100% - 100px);
   }
+  .fancybox-container .fancybox-slide {
+    padding: 44px 22px;
+  }
 }
 
 .wrapper {
