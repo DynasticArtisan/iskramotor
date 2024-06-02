@@ -1649,6 +1649,7 @@
 }
 
 .product-spares {
+  overflow-x: hidden;
   padding: 30px 40px;
   position: relative;
   display: flex;
@@ -2194,6 +2195,10 @@
   .fancybox-container .fancybox-slide {
     padding: 88px 22px;
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {

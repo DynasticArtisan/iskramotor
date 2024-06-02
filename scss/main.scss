@@ -16,6 +16,10 @@
 @import "subscription";
 @import "fancybox";
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1408px;
