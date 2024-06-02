@@ -1165,6 +1165,9 @@
 @media (max-width: 428px) {
   .product-images {
     height: unset;
+    padding-top: 100%;
+    padding-bottom: 24px;
+    position: relative;
   }
 }
 
@@ -1243,6 +1246,15 @@
     width: 100%;
     overflow: unset;
     margin-bottom: 24px;
+  }
+}
+@media (max-width: 428px) {
+  .product-images__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 
