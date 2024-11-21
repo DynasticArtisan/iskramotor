@@ -5829,12 +5829,14 @@ $(document).ready(function(){
 
 			#login-with-email-popup,
 			#login-with-sms-popup,
+			#login-with-code-popup,
 			#request-call-popup,
 			#request-success-popup {
 				display: none;
 			}
 			#login-with-email-popup:target,
 			#login-with-sms-popup:target,
+			#login-with-code-popup:target,
 			#request-call-popup:target,
 			#request-success-popup:target {
 				display: block;
@@ -5864,14 +5866,14 @@ $(document).ready(function(){
 							<div class="form-field">
 								<label class="form-field__label">Логин</label>
 								<input class="form-field__input" type="email" name="email" placeholder="Введите e-mail"/>
-								<small class="form-field__error"></small>
+								<small class="form-field__error">Данные неверны</small>
 							</div>
 							<div class="form-field">
 								<label class="form-field__label">Пароль</label>
 								<input class="form-field__input" type="password" name="password" placeholder="Введите пароль"/>
-								<small class="form-field__error"></small>
+								<small class="form-field__error">Данные неверны</small>
+								<a href="#" class="form-field__link">Забыли пароль?</a>
 							</div>
-							<a href="#" class="popup-form__reset-password">Забыли пароль?</a>
 						</div>
 						<div class="popup-form__footer">
 							<label class="form-agreement">
@@ -5880,6 +5882,7 @@ $(document).ready(function(){
 								<p class="form-agreement__text">
 									Нажимая на кнопку, Вы даете свое согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с условиями <a href="#">политики конфиденциальности</a>
 								</p>
+								<small class="form-agreement__error">Согласитесь с условиями</small>
 							</label>
 							<div class="popup-form__buttons">
 								<button class="form-button" type="submit">Войти</button>
@@ -5920,9 +5923,39 @@ $(document).ready(function(){
 								<p class="form-agreement__text">
 									Нажимая на кнопку, Вы даете свое согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с условиями <a href="#">политики конфиденциальности</a>
 								</p>
+								<small class="form-agreement__error">Согласитесь с условиями</small>
 							</label>
 							<div class="popup-form__buttons">
 								<button class="form-button" type="submit">Получить код</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>	
+			<div style="position: relative; z-index: 3000" id="login-with-code-popup">
+				<div class="popup-window">
+					<a href="#" class="popup-window__close-button">
+						<i class="svg inline  svg-inline-" aria-hidden="true">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+								<path data-name="Rounded Rectangle 114 copy 3" class="cccls-1" d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z" transform="translate(-325 -130)"></path>
+							</svg>
+						</i>
+					</a>
+					<form action="" class="popup-form">						
+						<div class="popup-form__header">
+							<h3 class="popup-form__title">Авторизация по СМС</h3>
+						</div>
+						<div class="popup-form__body">
+							<div class="form-field">
+								<label class="form-field__label">Введите код</label>
+								<input class="form-field__input" type="text" name="password" placeholder="__-__-__-__"/>
+								<small class="form-field__error">Неверный код</small>
+								<a href="#" class="form-field__link">Не приходит СМС?</a>
+							</div>
+						</div>
+						<div class="popup-form__footer">
+							<div class="popup-form__buttons">
+								<button class="form-button" type="submit">Войти</button>
 							</div>
 						</div>
 					</form>
@@ -5957,9 +5990,9 @@ $(document).ready(function(){
 								<input class="form-field__input" type="tel" name="PHONE_NUMBER" placeholder="+7 (___) ___-__-__"/>
 								<small class="form-field__error"></small>
 							</div>
-							<div class="form-field">
+							<div class="form-field form-field_comment">
 								<label class="form-field__label">Комментарий</label>
-								<textarea class="form-field__input" name="comment" placeholder="Введите текст"></textarea>
+								<textarea class="form-field__input" name="comment" placeholder="Ваш комментарий"></textarea>
 								<small class="form-field__error"></small>
 								<small class="form-required">обязательно для заполнения</small>
 							</div>
@@ -5972,6 +6005,7 @@ $(document).ready(function(){
 								<p class="form-agreement__text">
 									Нажимая на кнопку, Вы даете свое согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с условиями <a href="#">политики конфиденциальности</a>
 								</p>
+								<small class="form-agreement__error">Согласитесь с условиями</small>
 							</label>
 							<div class="popup-form__buttons">
 								<button class="form-button" type="submit">Отправить</button>

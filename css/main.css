@@ -2186,13 +2186,19 @@
 
 .popup-window {
   padding: 66px;
+  width: 100vw;
   max-width: 472px;
   background-color: #fff;
   border-radius: 4px;
 }
-@media (max-width: 472px) {
+@media (max-width: 961px) {
   .popup-window {
-    padding: 66px 20px;
+    padding: 30px calc((100% - 340px) / 2);
+  }
+}
+@media (max-width: 380px) {
+  .popup-window {
+    padding: 30px 20px;
   }
 }
 
@@ -2208,6 +2214,10 @@
 }
 .popup-window__close-button i {
   position: unset;
+  transition: 0.3s;
+}
+.popup-window__close-button:hover i {
+  transform: scale(1.2);
 }
 .popup-window__close-button svg {
   display: block;
@@ -2218,13 +2228,8 @@
   fill: currentColor;
 }
 
-.popup-form__header {
-  display: grid;
-  row-gap: 20px;
-}
-
 .popup-form__title {
-  margin: 0;
+  margin: 0 0 20px;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -2235,6 +2240,7 @@
 
 .popup-form__toggles {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .popup-form__toggle {
@@ -2264,12 +2270,13 @@
 }
 
 .popup-form__body {
-  margin-top: 30px;
   display: grid;
   row-gap: 20px;
 }
 
 .popup-form__reset-password {
+  display: block;
+  margin-top: 10px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -2282,7 +2289,6 @@
 }
 
 .popup-form__footer {
-  margin-top: 30px;
   display: grid;
   row-gap: 20px;
 }
@@ -2291,7 +2297,24 @@
   display: flex;
   justify-content: center;
 }
+.popup-form__buttons > * {
+  flex-grow: 1;
+}
 
+.form-field {
+  position: relative;
+  display: grid;
+  row-gap: 10px;
+}
+
+@media (max-width: 961px) {
+  .form-field_comment {
+    padding-top: 10px;
+  }
+  .form-field_comment label.form-field__label {
+    display: none;
+  }
+}
 label.form-field__label {
   display: block;
   font-family: "Inter", sans-serif;
@@ -2307,7 +2330,6 @@ label.form-field__label {
 
 textarea.form-field__input,
 input.form-field__input {
-  margin-top: 10px;
   display: block;
   width: 100%;
   padding: 12px;
@@ -2336,22 +2358,36 @@ input.form-field__input.error {
 }
 
 .form-field__error {
-  display: none;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FF4444;
+}
+
+.form-field__link {
+  display: block;
   margin-top: 10px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  color: #FF4444;
+  text-decoration: underline;
+  color: #436B87;
 }
-input.error ~ .form-field__error {
-  display: block;
+.form-field__link:hover {
+  color: #436B87;
 }
 
 .form-agreement {
   display: flex;
   align-items: center;
   column-gap: 8px;
+  padding-top: 30px;
+  position: relative;
 }
 .form-agreement input {
   display: none;
@@ -2374,8 +2410,8 @@ input.error ~ .form-field__error {
   left: 0;
   top: 0;
   bottom: 0;
-  padding: 8px;
-  border-radius: 8px;
+  padding: inherit;
+  border-radius: inherit;
   background-color: #436B87;
   box-shadow: 0 0 8px rgba(65, 106, 136, 0.7);
   transition: inherit;
@@ -2387,18 +2423,34 @@ input:checked ~ .form-agreement__checkbox::after {
   background-color: #E0E0E0;
   left: 16px;
 }
+.form-agreement__checkbox.error {
+  border: 1px solid #FF4444;
+}
 
 .form-agreement__text {
-  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
   color: #7D7D7D;
 }
+.form-agreement__textp {
+  margin: 0;
+}
 .form-agreement__text a {
   font-weight: 500;
   color: #416A88;
+}
+
+.form-agreement__error {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FF4444;
 }
 
 .form-required {
@@ -2414,12 +2466,16 @@ input:checked ~ .form-agreement__checkbox::after {
   content: "* ";
   color: #FF4444;
 }
+@media (max-width: 961px) {
+  .form-required {
+    display: none;
+  }
+}
 
 .form-button {
   display: block;
-  width: 100%;
-  max-width: 170px;
   height: 44px;
+  max-width: 100%;
   padding: 15px 12px 12px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
