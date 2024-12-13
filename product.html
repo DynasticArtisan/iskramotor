@@ -8423,13 +8423,6 @@
 
                                     </div>
 
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- #################################################  START  ####################################################### -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-
-                                    <!-- СТРУКТУРУ ОСТАВИТЬ КАК ЕСТЬ, С ПОМОЩЬЮ СТИЛЕЙ ПРИВЕСТИ В ПОРЯДОК -->
                                     <div class="product-info-block">
                                             <div class="product-info-block__reviews">
                                                 <div class="product-rating">
@@ -8466,12 +8459,6 @@
 
                                     </div>
 
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ###############################################№##  END  #######№################################################ -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-
                                 </div>
                             </section>
                         </div>
@@ -8481,15 +8468,6 @@
                                     data-link="/catalog/4185/"></div>
                                 <div itemscope itemtype="http://schema.org/Product">
                                     <link itemprop="url" href="https://iskramotor.market/catalog/startery/IMS301316/">
-
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- #################################################  START  ####################################################### -->
-                                    <!-- ################################################################################################################# -->
-                                    <!-- ################################################################################################################# -->
-
-
-
                                     <div class="product-details">
                                         <div class="product-details__layout">
                                             <div class="product-details__left">
@@ -8799,18 +8777,46 @@
                                             <li data-class="main" id="product-options-main" class="product_options_head_active">Характеристики</li>
                                             <li data-class="primenenie" id="product-options-primenenie" class="product_options_head_unactive product_options_head_unactive_prim">Применение</li>
                                             <li data-class="analogi" id="product-options-analogi" class="product_options_head_unactive product_options_head_unactive_analog">Аналоги</li>
-                                            <li data-class="sootvetstvie" id="product-options-sootvetstvie" class="product_options_head_unactive product_options_head_unactive_soot">Номера Iskra</li>
+                                            <!-- <li data-class="sootvetstvie" id="product-options-sootvetstvie" class="product_options_head_unactive product_options_head_unactive_soot">Номера Iskra</li> -->
                                             <li data-class="zapcasti" id="product-options-zapcasti" class="product_options_head_unactive product_options_head_unactive_zap">Запчасти</li>
+                                            <li data-class="sections" id="product-options-sections" class="product_options_head_unactive product_options_head_unactive_sections">Разделы<span class="product-sections-tab-mobile">, где находится товар</span></li>
                                             <li data-class="action" id="product-options-action" class="product_options_head_unactive product_options_head_unactive_action">2 000 ₽ за видео</li>
                                             <li data-class="brand" id="product-options-brand" class="product_options_head_unactive product_options_head_unactive_brand">О бренде</li>
                                         </ul>
                                     </nav>
-                                <!-- ################################################################################################################# -->
-                                <!-- ################################################################################################################# -->
-                                <!-- ##################################################  END  ######################################################## -->
-                                <!-- ################################################################################################################# -->
-                                <!-- ################################################################################################################# -->
                                     <div class="product_options_body">
+                                        <div class="product_options_body_sections" style="display: none;">
+                                            <div class="product-sections">
+                                                <h5 class="product-sections__title">Этот товар находится в следующих товарных группах (разделах):</h5>
+                                                <ul class="product-sections__list">
+                                                    <li class="product-section">
+                                                        <a href="#" class="product-section__title">Стартеры для дизельных двигателей ЯМЗ</a>
+                                                        <img src="img/product/product-section_1.png" class="product-section__image">   
+                                                        <a href="#" class="product-section__link">перейти</a>                                     
+                                                    </li>
+                                                    <li class="product-section">
+                                                        <a href="#" class="product-section__title">Стартеры для самосвалов Белаз</a>
+                                                        <img src="img/product/product-section_2.png" class="product-section__image">   
+                                                        <a href="#" class="product-section__link">перейти</a>                                     
+                                                    </li>
+                                                    <li class="product-section">
+                                                        <a href="#" class="product-section__title">Стартеры для комбайнов Ростсельмаш</a>
+                                                        <img src="img/product/product-section_3.png" class="product-section__image">   
+                                                        <a href="#" class="product-section__link">перейти</a>                                     
+                                                    </li>
+                                                    <li class="product-section">
+                                                        <a href="#" class="product-section__title">Стартеры для тракторов МОАЗ</a>
+                                                        <img src="img/product/product-section_4.png" class="product-section__image">   
+                                                        <a href="#" class="product-section__link">перейти</a>                                     
+                                                    </li>
+                                                    <li class="product-section">
+                                                        <a href="#" class="product-section__title">Стартеры для тракторов ЧТЗ-Уралтрак</a>
+                                                        <img src="img/product/product-section_5.png" class="product-section__image">   
+                                                        <a href="#" class="product-section__link">перейти</a>                                     
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                         <div class="product_options_body_availability" style="display: none;">
                                             <a id="ordered" name="ordered"></a>
                                              <h3 class="">Забронировать товар MAHLE AZF4581</h3>
@@ -9605,6 +9611,7 @@
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
                                         $("#product-options-otzivi").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9618,6 +9625,7 @@
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
                                         $("#product-options-otzivi").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9631,6 +9639,7 @@
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
                                         $("#product-options-otzivi").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9644,6 +9653,7 @@
                                         $("#product-options-analogi").addClass('product_options_head_unactive');
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-otzivi").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9657,6 +9667,7 @@
                                         $("#product-options-analogi").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
                                         $("#product-options-otzivi").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9670,6 +9681,7 @@
                                         $("#product-options-analogi").addClass('product_options_head_unactive');
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9683,6 +9695,7 @@
                                         $("#product-options-analogi").addClass('product_options_head_unactive');
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
@@ -9696,6 +9709,21 @@
                                         $("#product-options-analogi").addClass('product_options_head_unactive');
                                         $("#product-options-zapcasti").addClass('product_options_head_unactive');
                                         $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
+                                        $("#product-options-sections").addClass('product_options_head_unactive');
+                                        $(".product_options_head ul li").removeClass('product_options_head_active');
+                                        $(this).addClass('product_options_head_active');
+                                        $(this).removeClass('product_options_head_unactive');
+                                    });
+                                    $("#product-options-sections").bind("click", function () {
+                                        $(".product_options_body>div").css('display', 'none');
+                                        $(".product_options_body_sections").css('display', 'block');
+                                        $("#product-options-main").addClass('product_options_head_unactive');
+                                        $("#product-options-primenenie").addClass('product_options_head_unactive');
+                                        $("#product-options-zapcasti-from-zap").addClass('product_options_head_unactive');
+                                        $("#product-options-analogi").addClass('product_options_head_unactive');
+                                        $("#product-options-zapcasti").addClass('product_options_head_unactive');
+                                        $("#product-options-sootvetstvie").addClass('product_options_head_unactive');
+                                        $("#product-options-otzivi").addClass('product_options_head_unactive');
                                         $(".product_options_head ul li").removeClass('product_options_head_active');
                                         $(this).addClass('product_options_head_active');
                                         $(this).removeClass('product_options_head_unactive');
