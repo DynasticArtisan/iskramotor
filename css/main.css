@@ -2013,8 +2013,8 @@
 
 .product-card {
   display: grid;
-  height: 280px;
-  padding: 16px 16px 24px;
+  height: 290px;
+  padding: 24px 16px;
   row-gap: 12px;
   background-color: white;
   outline: 1px solid #ACB2B0;
@@ -2023,6 +2023,7 @@
 .product-card:hover {
   outline-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .product-card__image {
@@ -2037,7 +2038,7 @@
   display: grid;
   row-gap: 6px;
   position: absolute;
-  top: 18px;
+  top: 24px;
   left: -1px;
   z-index: 10;
 }
@@ -2162,6 +2163,9 @@
   .product-card__image {
     max-height: 80px;
     margin-right: 0;
+  }
+  .product-card__badges {
+    top: 16px;
   }
   .product-card__badges-item {
     max-width: 54px;
