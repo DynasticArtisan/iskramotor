@@ -18,7 +18,7 @@
 
 .product-parts__request-btn {
     margin: 0;
-    padding: 10px 6px;
+    padding: 12px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,11 @@
     line-height: 1.2;
     letter-spacing: 0.55px;
     text-transform: uppercase;
+    transition: 0.2s;
+    &:hover {
+        background-color: #4b7a9d;
+        color: white;
+    }
 }
 
 .product-parts__list {
@@ -101,6 +106,12 @@
     }
     span {
         display: block;
+    }
+
+    transition: 0.2s;
+    &:hover {
+        background-color: #4b7a9d;
+        color: white;
     }
 }
 

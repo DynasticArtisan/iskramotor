@@ -142,9 +142,9 @@
     text-transform: uppercase;
     border: 1px solid #416A88;
     border-radius: 2px;
-    transition: 0.2s;
+    transition: 0.3s;
 
-    &:hover {
+    .product-card:hover & {
         color: white;
         background-color: #416A88;
     }
