@@ -175,6 +175,10 @@
         line-height: 12px;
     }
     
+    .product-card__title {
+        -webkit-line-clamp: 3;
+    }
+
     .product-card__params-list {
         display: none;
     }
