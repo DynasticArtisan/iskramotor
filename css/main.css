@@ -1783,7 +1783,7 @@
 .product-parts__request-text {
   margin: 0;
   color: black;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
@@ -1799,7 +1799,7 @@
   border-radius: 2px;
   background-color: #416A88;
   color: white;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 1.2;
@@ -1823,7 +1823,7 @@
 .product-parts__list-title {
   margin: 0;
   color: black;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -1852,7 +1852,7 @@
 .product-parts__item-title {
   margin: 0;
   color: #436B87;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -1868,7 +1868,7 @@
   border-radius: 2px;
   background-color: #416A88;
   color: white;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 1.2;
@@ -1924,7 +1924,7 @@
 .product-sections__title {
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
@@ -1954,7 +1954,7 @@
 .product-section__title {
   margin-right: auto;
   color: black;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -1969,7 +1969,7 @@
 .product-section__link {
   display: block;
   color: #416A88;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
@@ -2045,7 +2045,7 @@
   max-width: 58px;
   height: 18px;
   color: #7A7A7A;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 16px;
@@ -2118,7 +2118,7 @@
   align-items: flex-start;
   column-gap: 4px;
   color: #FBB240;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.4;
@@ -2133,7 +2133,7 @@
   width: 100%;
   max-width: 72px;
   color: #416A88;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 25px;
