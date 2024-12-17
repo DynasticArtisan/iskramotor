@@ -2005,6 +2005,7 @@
 }
 .product-cards-list {
   display: grid;
+  gap: 1px;
   grid-template-columns: repeat(4, 1fr);
 }
 .product-cards-list_three-columns {
@@ -2013,15 +2014,15 @@
 
 .product-card {
   display: grid;
-  height: 260px;
+  height: 280px;
   padding: 16px 16px 24px;
   row-gap: 12px;
   background-color: white;
-  border: 1px solid #ACB2B0;
+  outline: 1px solid #ACB2B0;
   position: relative;
 }
 .product-card:hover {
-  border-color: white;
+  outline-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -2039,33 +2040,34 @@
   position: absolute;
   top: 18px;
   left: -1px;
+  z-index: 10;
 }
 
 .product-card__badges-item {
   display: block;
-  padding: 0 16px;
-  max-width: 58px;
-  height: 18px;
+  padding: 2px 12px;
+  max-width: 60px;
+  height: 20px;
   color: #7A7A7A;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1.2;
   letter-spacing: 0.5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   border-top: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
-  border-radius: 2px;
+  border-radius: 0 2px 2px 0;
 }
 .product-card__badges-item:nth-child(3n+1) {
-  border-color: #0AE35A;
+  border-color: #228f4a;
 }
 .product-card__badges-item:nth-child(3n+2) {
   border-color: #FF4444;
 }
 .product-card__badges-item:nth-child(3n+3) {
-  border-color: #377CDE;
+  border-color: #6A46E8;
 }
 
 .product-card__title {
@@ -2087,11 +2089,12 @@
 }
 
 .product-card__params-item {
-  color: #7A7A7A;
+  color: #999999;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.6;
+  text-align-last: left;
 }
 
 .product-card__bottom {
@@ -2153,7 +2156,7 @@
   }
   .product-card {
     display: grid;
-    height: 215px;
+    height: 220px;
     padding: 12px 12px 18px;
     row-gap: 6px;
   }
@@ -2162,10 +2165,10 @@
     margin-right: 0;
   }
   .product-card__badges-item {
-    max-width: 52px;
-    height: 14px;
-    padding: 0 12px;
-    line-height: 12px;
+    max-width: 54px;
+    height: 16px;
+    padding: 1px 12px;
+    font-size: 11px;
   }
   .product-card__title {
     font-size: 12px;
