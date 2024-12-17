@@ -1854,10 +1854,9 @@
 .product-parts__item-title {
   margin: 0;
   color: #436B87;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 0.55px;
 }
 
 .product-parts__item-btn {
@@ -1902,7 +1901,7 @@
     grid-template-columns: 1fr auto;
   }
   .product-parts__item-title {
-    font-size: 10px;
+    font-size: 12px;
   }
   .product-parts__item-btn {
     padding: 0;
