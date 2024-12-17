@@ -2070,7 +2070,6 @@
 
 .product-card__title {
   margin: 0;
-  max-height: 30px;
   color: #545454;
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -2154,7 +2153,7 @@
   }
   .product-card {
     display: grid;
-    height: 210px;
+    height: 215px;
     padding: 12px 12px 18px;
     row-gap: 6px;
   }
