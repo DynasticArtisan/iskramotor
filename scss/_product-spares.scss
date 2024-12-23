@@ -6,6 +6,10 @@
     align-items: center;
     user-select: none;
 
+    .swiper {
+        padding: 4px;
+    }
+
     .swiper-slide {
         height: unset;
     }
