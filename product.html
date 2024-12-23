@@ -9702,6 +9702,56 @@
                                     </noindex>
                                 </div>
                                 <br>
+                                <div class="product-video">
+                                    <div class="product-video__section">
+                                        <h4 class="product-video__section-title">Видео о товаре</h4>
+                                        <div class="product-video__section-list">
+                                                <a href="https://www.youtube.com/watch?v=wLcAmOCH8Ec"
+                                                    class="product-video__item"
+                                                    style="--video-icon: url(https://iskramotor.market/local/templates/.default/components/bitrix/catalog/new_card/bitrix/catalog.element/lm_catalog_universal/images/product/video-icon.png)"
+                                                    data-fancybox="customer-media">
+                                                    <img src="https://iskramotor.market/upload/iblock/1ec/kq4xhkuvh0217no7185mtwpn5q7pg36k.jpg"/>
+                                                </a>
+                                                <!-- <a href="https://www.youtube.com/watch?v=wLcAmOCH8Ec"
+                                                    class="product-video__item"
+                                                    style="--video-icon: url(https://iskramotor.market/local/templates/.default/components/bitrix/catalog/new_card/bitrix/catalog.element/lm_catalog_universal/images/product/video-icon.png)"
+                                                    data-fancybox="customer-media">
+                                                    <img src="https://iskramotor.market/upload/iblock/1ec/kq4xhkuvh0217no7185mtwpn5q7pg36k.jpg"/>
+                                                </a> -->
+                                        </div>
+                                    </div>
+                                    <div class="product-video__section">
+                                        <h4 class="product-video__section-title">Видео от покупателей</h4>
+                                        <div class="product-video__section-list">
+                                            <a href="https://vk.com/clip->91050579_456239206"
+                                                class="product-video__item"
+                                                style="--video-icon: url(https://iskramotor.market/local/templates/.default/components/bitrix/catalog/new_card/bitrix/catalog.element/lm_catalog_universal/images/product/video-icon.png)"
+                                                data-fancybox data-type="iframe"
+                                                data-src='https://vk.com/video_ext.php?oid=-91050579&id=456239206&hd=2&autoplay=1'>
+                                                <img src="https://iskramotor.market/upload/iblock/508/q54hi095dlq93ugi2gh69rnqweq254sv.jpg"/>
+                                            </a>
+                                            <a href="https://vk.com/clip->91050579_456239206"
+                                                class="product-video__item"
+                                                style="--video-icon: url(https://iskramotor.market/local/templates/.default/components/bitrix/catalog/new_card/bitrix/catalog.element/lm_catalog_universal/images/product/video-icon.png)"
+                                                data-fancybox data-type="iframe"
+                                                data-src='https://vk.com/video_ext.php?oid=-91050579&id=456239206&hd=2&autoplay=1'>
+                                                <img src="https://iskramotor.market/upload/iblock/508/q54hi095dlq93ugi2gh69rnqweq254sv.jpg"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    let maxSectionItems = 0;
+                                    let totalItems = 0;
+                                    document.querySelectorAll(".product-video__section-list").forEach((element) => {
+                                        element.closest(".product-video__section").style.setProperty("--section-items", element.children.length);
+                                        maxSectionItems = Math.max(maxSectionItems, element.children.length);
+                                        element.closest(".product-video").style.setProperty("--max-section-items", maxSectionItems);
+                                        totalItems += element.children.length;
+                                        element.closest(".product-video").style.setProperty("--total-items", totalItems);
+                                    });
+                                </script>
+                                <hr class='card_hr' <a name="terms_promotion" id="terms_promotion"></a>
                                 <a id='review' name="review"></a>
                                 <div class="reviews EXTENDED">
                                     <h3>Отзывы и вопросы о товаре</h3>
@@ -10135,6 +10185,7 @@
                                 </div>
                                 <hr class='card_hr w-96'>
                                 <a id="videoAnchor" name="video"></a>
+
                                 <div class="lm-youtube-block product_video block_video">
                                     <h4>Видео о товаре</h4>
                                     <div class="lm-youtube-one-video-block product_video part_youtube first-video">
